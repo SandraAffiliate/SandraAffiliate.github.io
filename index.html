@@ -1,15 +1,55 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Hier wird dein CSS eingebunden -->
-    <title>Mein Projekt</title>
-</head>
-<body>
-    <h1>Willkommen zu meinem Projekt</h1>
-    <p>Dies ist ein Beispieltext.</p>
-    <a href="#">Hier ist ein Link</a>
-    <button>Klicke hier</button>
-</body>
-</html>
+:root {
+  --bg: #1C1C1E;
+  --primary: #1B2A41;
+  --accent: #801336;
+  --accent-hover: #A31621;
+  --text: #E5E5E5;
+  --text-secondary: #A1A1A1;
+  --border: #2C2C2E;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+header, footer {
+  background-color: var(--primary);
+  padding: 1em;
+  border-bottom: 1px solid var(--border);
+}
+
+code, pre {
+  background-color: var(--primary);
+  color: var(--accent);
+  padding: 0.5em;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
