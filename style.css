@@ -1,11 +1,11 @@
 :root {
-  --bg: #1C1C1E; /* dunkelgrau */
-  --primary: #1B2A41; /* dunkelblau */
-  --accent: #801336; /* bordeaux */
-  --accent-hover: #A31621;
-  --text: #E5E5E5;
-  --text-secondary: #A1A1A1;
-  --border: #2C2C2E;
+  --bg: #2A2A2E;            /* leicht aufgehellter Hintergrund */
+  --primary: #1B2A41;       /* dunkelblau */
+  --accent: #A31B3C;        /* bordeaux - heller & kräftiger */
+  --accent-hover: #C0243B;  /* hover-Farbe für Buttons/Links */
+  --text: #FFFFFF;          /* reines Weiß für Text */
+  --text-secondary: #CCCCCC;
+  --border: #3A3A3E;
 }
 
 body {
