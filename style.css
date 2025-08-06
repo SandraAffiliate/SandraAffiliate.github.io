@@ -1,50 +1,83 @@
+```css
+/* Farbdefinitionen */
 :root {
-  --bg: #2A2A2E;            /* leicht aufgehellter Hintergrund */
-  --primary: #1B2A41;       /* dunkelblau */
-  --accent: #A31B3C;        /* bordeaux - heller & kräftiger */
-  --accent-hover: #C0243B;  /* hover-Farbe für Buttons/Links */
-  --text: #FFFFFF;          /* reines Weiß für Text */
-  --text-secondary: #CCCCCC;
-  --border: #3A3A3E;
+    --mittelgrau: #7d7d7d; /* Mittelgrau */
+    --bordeaux: #6f2c3e; /* Bordeaux */
+    --dunkelblau: #003366; /* Dunkelblau */
 }
 
+/* Grundlegende Stile */
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 2em;
+    background-color: #ffffff; /* Weißer Hintergrund für Kontrast */
+    color: var(--mittelgrau); /* Textfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header-Stil */
+header {
+    background-color: var(--dunkelblau); /* Dunkelblauer Hintergrund */
+    color: white; /* Weißer Text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigationsleiste */
+nav {
+    background-color: var(--bordeaux); /* Bordeaux Hintergrund */
+    padding: 10px;
+}
+
+nav a {
+    color: white; /* Weißer Text für Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--dunkelblau); /* Dunkelblauer Farbton für Überschriften */
 }
 
 h1 {
-  color: var(--accent);
+    font-size: 2em; /* Große Überschrift */
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
+h2 {
+    font-size: 1.5em; /* Mittlere Überschrift */
 }
 
-a:hover {
-  color: var(--accent-hover);
+/* Fußzeile */
+footer {
+    background-color: var(--mittelgrau); /* Mittelgrauer Hintergrund */
+    color: white; /* Weißer Text */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Button-Stil */
 button {
-  background-color: var(--accent);
-  color: var(--bg);
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 6px;
-  cursor: pointer;
+    background-color: var(--bordeaux); /* Bordeaux Hintergrund für Buttons */
+    color: white; /* Weißer Text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--accent-hover);
+    background-color: var(--dunkelblau); /* Dunkelblauer Hintergrund beim Hover */
 }
-
-code, pre {
-  background-color: var(--primary);
-  color: var(--text);
-  padding: 0.5em;
-  border-radius: 6px;
-}
+```
